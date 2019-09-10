@@ -60,6 +60,8 @@
 // #![feature(trace_macros)]
 // trace_macros!(true);
 
+extern crate typenum_macro;
+
 use core::cmp::Ordering;
 
 include!(env!("TYPENUM_BUILD_OP"));
@@ -83,6 +85,8 @@ pub use type_operators::*;
 pub use array::{ATerm, TArr};
 pub use int::{NInt, PInt};
 pub use uint::{UInt, UTerm};
+
+pub use typenum_macro::tyint;
 
 /// A potential output from `Cmp`, this is the type equivalent to the enum variant
 /// `core::cmp::Ordering::Greater`.

@@ -16,6 +16,10 @@
 [lib]
   name = "typenum"
 
+[dependencies]
+  typenum-macro = { version = "0.1.0", path = "typenum-macro" }
+
+
 [features]
   no_std = []
   i128 = []
